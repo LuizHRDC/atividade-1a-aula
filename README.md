@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+# Projeto de Rotas e Componentes no React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+Este projeto utiliza React e `react-router-dom` para criar um sistema de rotas. Foram implementadas três páginas principais: `Home`, `Sobre` e `Contato`. Um componente dinâmico chamado `Tabela` é usado na página `Contato` para exibir uma lista de dados enviados via props.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estrutura do Projeto
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Configuração de Rotas:** O arquivo `AppRoutes.tsx` define as rotas e associa cada caminho a um componente.
+- **Páginas Criadas:**
+  - `Home`: Página inicial.
+  - `Sobre`
+  - `Contato`: Página que utiliza o componente `Tabela` para exibir uma lista de contatos.
+- **Componente Dinâmico:** O componente `Tabela` recebe dados via props e renderiza dinamicamente uma tabela.
